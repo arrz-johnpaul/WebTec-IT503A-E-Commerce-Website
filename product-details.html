@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - AmpKicks</title>
+    <meta name="description" content="View detailed information about this AmpKicks product including specifications, sizes, and pricing.">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/product-details.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top" data-testid="navbar-main">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand fw-bold fs-3" href="index.html" data-testid="link-logo">AmpKicks</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" data-testid="button-navbar-toggle">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" data-testid="link-home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html" data-testid="link-products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html?gender=Men" data-testid="link-men">Men</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html?gender=Women" data-testid="link-women">Women</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-danger" href="products.html?category=Sale" data-testid="link-sale">Sale</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact" data-testid="link-contact">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <a href="#" class="text-dark" data-testid="button-user">
+                        <i class="bi bi-person fs-4"></i>
+                    </a>
+                    <a href="cart.html" class="text-dark position-relative" data-testid="link-cart">
+                        <i class="bi bi-bag fs-4"></i>
+                        <span class="cart-count position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" data-testid="text-cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Product Details -->
+    <div class="container my-5">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html" data-testid="link-breadcrumb-home">Home</a></li>
+                <li class="breadcrumb-item"><a href="products.html" data-testid="link-breadcrumb-products">Products</a></li>
+                <li class="breadcrumb-item active" id="breadcrumbProduct" data-testid="text-breadcrumb-product">Product</li>
+            </ol>
+        </nav>
+
+        <div class="row g-5">
+            <!-- Product Images -->
+            <div class="col-lg-6">
+                <div class="product-images">
+                    <div class="main-image mb-3" data-testid="container-main-image">
+                        <img id="mainImage" src="" alt="Product" class="img-fluid rounded" data-testid="img-main-product">
+                    </div>
+                    <div class="thumbnail-images d-flex gap-2" id="thumbnailImages" data-testid="container-thumbnails">
+                        <!-- Thumbnails will be loaded dynamically -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Info -->
+            <div class="col-lg-6">
+                <div class="product-info" data-testid="container-product-info">
+                    <p class="text-muted mb-2" id="productBrand" data-testid="text-brand">AmpKicks</p>
+                    <h1 class="fw-bold mb-3" id="productName" data-testid="text-product-name">Product Name</h1>
+                    
+                    <!-- Rating -->
+                    <div class="mb-3" id="productRating" data-testid="container-rating">
+                        <!-- Rating stars will be added dynamically -->
+                    </div>
+
+                    <!-- Price -->
+                    <h2 class="fw-bold text-dark mb-4" id="productPrice" data-testid="text-price">₱0</h2>
+
+                    <!-- Description -->
+                    <p class="text-muted mb-4" id="productDescription" data-testid="text-description">Product description</p>
+
+                    <!-- Size Selection -->
+                    <div class="mb-4">
+                        <h5 class="fw-bold mb-3" data-testid="text-size-title">Select Size</h5>
+                        <div class="size-options" id="sizeOptions" data-testid="container-sizes">
+                            <!-- Sizes will be loaded dynamically -->
+                        </div>
+                    </div>
+
+                    <!-- Quantity -->
+                    <div class="mb-4">
+                        <h5 class="fw-bold mb-3" data-testid="text-quantity-title">Quantity</h5>
+                        <div class="quantity-selector">
+                            <button class="btn btn-outline-dark" id="decreaseQty" data-testid="button-decrease-quantity">-</button>
+                            <input type="number" class="form-control" id="quantity" value="1" min="1" max="10" readonly data-testid="input-quantity">
+                            <button class="btn btn-outline-dark" id="increaseQty" data-testid="button-increase-quantity">+</button>
+                        </div>
+                    </div>
+
+                    <!-- Buttons -->
+                    <div class="d-grid gap-3">
+                        <button class="btn btn-dark btn-lg" id="addToCartBtn" data-testid="button-add-to-cart">
+                            <i class="bi bi-bag me-2"></i>Add to Cart
+                        </button>
+                        <button class="btn btn-outline-dark btn-lg" id="buyNowBtn" data-testid="button-buy-now">
+                            Buy Now
+                        </button>
+                    </div>
+
+                    <!-- Product Details -->
+                    <div class="mt-5">
+                        <h5 class="fw-bold mb-3" data-testid="text-details-title">Product Details</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2" data-testid="text-category"><strong>Category:</strong> <span id="productCategory"></span></li>
+                            <li class="mb-2" data-testid="text-gender"><strong>Gender:</strong> <span id="productGender"></span></li>
+                            <li class="mb-2" data-testid="text-brand-detail"><strong>Brand:</strong> <span id="productBrandDetail">AmpKicks</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sticky Mobile Add to Cart -->
+    <div class="sticky-mobile-cart d-lg-none" data-testid="container-sticky-cart">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-6">
+                    <p class="mb-0 fw-bold" id="stickyPrice" data-testid="text-sticky-price">₱0</p>
+                </div>
+                <div class="col-6">
+                    <button class="btn btn-dark w-100" id="stickyAddToCart" data-testid="button-sticky-add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5" data-testid="footer-main">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <h4 class="fw-bold mb-3" data-testid="text-footer-brand">AmpKicks</h4>
+                    <p class="text-muted" data-testid="text-footer-tagline">Step Into Power</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="mb-3" data-testid="text-footer-shop-title">Shop</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="products.html" class="text-muted text-decoration-none" data-testid="link-footer-products">All Products</a></li>
+                        <li><a href="products.html?gender=Men" class="text-muted text-decoration-none" data-testid="link-footer-men">Men</a></li>
+                        <li><a href="products.html?gender=Women" class="text-muted text-decoration-none" data-testid="link-footer-women">Women</a></li>
+                        <li><a href="products.html?category=Sale" class="text-muted text-decoration-none" data-testid="link-footer-sale">Sale</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="mb-3" data-testid="text-footer-support-title">Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-muted text-decoration-none" data-testid="link-footer-help">Help Center</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none" data-testid="link-footer-shipping">Shipping Info</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none" data-testid="link-footer-returns">Returns</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none" data-testid="link-footer-contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="mb-3" data-testid="text-footer-connect-title">Connect</h5>
+                    <div class="social-icons">
+                        <a href="#" class="text-white fs-4 me-3" data-testid="link-footer-facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white fs-4 me-3" data-testid="link-footer-instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white fs-4 me-3" data-testid="link-footer-twitter"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white fs-4" data-testid="link-footer-youtube"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 bg-secondary">
+            <div class="text-center text-muted">
+                <p data-testid="text-footer-copyright">&copy; 2025 AmpKicks. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/product-details.js"></script>
+</body>
+</html>

@@ -1,0 +1,484 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "AmpFoam Dragonfly 2 Elite",
+      "brand": "AmpKicks",
+      "price": 8895,
+      "category": "Running",
+      "gender": "Unisex",
+      "rating": 4.8,
+      "image": "images/Unisex/Product1.png",
+      "images": [
+        "images/Unisex/Product1-tn1.png",
+        "images/Unisex/Product1-tn2.png",
+        "images/Unisex/Product1-tn3.png",
+        "images/Unisex/Product1-tn4.png",
+        "images/Unisex/Product1-tn5.png",
+        "images/Unisex/Product1-tn6.png"
+      ],
+      "description": "Experience ultimate comfort with AmpFoam Dragonfly 2 Elite. Engineered for peak performance on any terrain.",
+      "sizes": ["7", "8", "9", "10", "11", "12"]
+    },
+    {
+      "id": "2",
+      "name": "AmpFlex Zoom Fly 6",
+      "brand": "AmpKicks",
+      "price": 6577,
+      "category": "Training",
+      "gender": "Women",
+      "rating": 4.7,
+      "image": "images/WomenShoes/Product2.png",
+      "images": [
+        "images/WomenShoes/Product2-tn1.png",
+        "images/WomenShoes/Product2-tn2.png",
+        "images/WomenShoes/Product2-tn3.png",
+        "images/WomenShoes/Product2-tn4.png",
+        "images/WomenShoes/Product2-tn5.png",
+        "images/WomenShoes/Product2-tn6.png"
+      ],
+      "description": "A versatile, all-round daily training and race-day shoe.",
+      "sizes": ["5", "6", "7", "8", "9", "10"]
+    },
+    {
+      "id": "3",
+      "name": "AmpMax KD18 Slim Reaper EP",
+      "brand": "AmpKicks",
+      "price": 7999,
+      "category": "Basketball",
+      "gender": "Men",
+      "rating": 4.7,
+      "image": "images/MenShoes/Product3.png",
+      "images": [
+        "images/MenShoes/Product3-tn1.png",
+        "images/MenShoes/Product3-tn2.png",
+        "images/MenShoes/Product3-tn3.png",
+        "images/MenShoes/Product3-tn4.png",
+        "images/MenShoes/Product3-tn5.png",
+        "images/MenShoes/Product3-tn6.png"
+      ],
+      "description": "Dominate the court with AmpMax KD18 Slim Reaper EP with Grip technology and superior ankle support.",
+      "sizes": ["8", "9", "10", "11", "12", "13"]
+    },
+    {
+      "id": "4",
+      "name": "AmpSpeed  Zoom Vomero 5",
+      "brand": "AmpKicks",
+      "price": 8895,
+      "category": "Running",
+      "gender": "Men",
+      "rating": 4.6,
+      "image": "images/MenShoes/Product4.png",
+      "images": [
+        "images/MenShoes/Product4-tn1.png",
+        "images/MenShoes/Product4-tn2.png",
+        "images/MenShoes/Product4-tn3.png",
+        "images/MenShoes/Product4-tn4.png",
+        "images/MenShoes/Product4-tn5.png",
+        "images/MenShoes/Product4-tn6.png"
+      ],
+      "description": "Built for speed with lightweight materials and responsive cushioning for your fastest runs.",
+      "sizes": ["7", "8", "9", "10", "11", "12"]
+    },
+    {
+      "id": "5",
+      "name": "AmpStyle Killshot 2 Leather",
+      "brand": "AmpKicks",
+      "price": 2748,
+      "category": "Casual",
+      "gender": "Unisex",
+      "rating": 4.8,
+      "image": "images/Unisex/Product5.png",
+      "images": [
+        "images/Unisex/Product5-tn1.png",
+        "images/Unisex/Product5-tn2.png",
+        "images/Unisex/Product5-tn3.png",
+        "images/Unisex/Product5-tn4.png",
+        "images/Unisex/Product5-tn5.png",
+        "images/Unisex/Product5-tn6.png"
+      ],
+      "description": "Classic white sneakers perfect for everyday wear. Timeless style meets modern comfort.",
+      "sizes": ["6", "7", "8", "9", "10", "11", "12"]
+    },
+    {
+      "id": "6",
+      "name": "AmpTrail Adventure",
+      "brand": "AmpKicks",
+      "price": 6999,
+      "category": "Hiking",
+      "gender": "Unisex",
+      "rating": 4.7,
+      "image": "images/Unisex/Product6.png",
+      "images": [
+        "images/Unisex/Product6-tn1.png",
+        "images/Unisex/Product6-tn2.png",
+        "images/Unisex/Product6-tn3.png",
+        "images/Unisex/Product6-tn4.png",
+        "images/Unisex/Product6-tn5.png",
+        "images/Unisex/Product6-tn6.png"
+      ],
+      "description": "Rugged construction with all-terrain grip for outdoor adventures and hiking trails.",
+      "sizes": ["7", "8", "9", "10", "11", "12", "13"]
+    },
+    {
+      "id": "7",
+      "name": "AmpLite Flex Train",
+      "brand": "AmpKicks",
+      "price": 3995,
+      "category": "Training",
+      "gender": "Women",
+      "rating": 4.9,
+      "image": "images/WomenShoes/Product7.png",
+      "images": [
+        "images/WomenShoes/Product7-tn1.png",
+        "images/WomenShoes/Product7-tn2.png",
+        "images/WomenShoes/Product7-tn3.png",
+        "images/WomenShoes/Product7-tn4.png",
+        "images/WomenShoes/Product7-tn5.png",
+        "images/WomenShoes/Product7-tn6.png"
+      ],
+      "description": "Ultra-lightweight design in vibrant pink. Perfect for yoga, pilates, and light training.",
+      "sizes": ["5", "6", "7", "8", "9", "10"]
+    },
+    {
+      "id": "8",
+      "name": "AmpPro Giannis Freak 7 EP",
+      "brand": "AmpKicks",
+      "price": 6295,
+      "category": "Basketball",
+      "gender": "Men",
+      "rating": 4.8,
+      "image": "images/MenShoes/Product8.png",
+      "images": [
+        "images/MenShoes/Product8-tn1.png",
+        "images/MenShoes/Product8-tn2.png",
+        "images/MenShoes/Product8-tn3.png",
+        "images/MenShoes/Product8-tn4.png",
+        "images/MenShoes/Product8-tn5.png",
+        "images/MenShoes/Product8-tn6.png"
+      ],
+      "description": "Premium basketball shoes with enhanced stability and explosive responsiveness.",
+      "sizes": ["8", "9", "10", "11", "12", "13"]
+    },
+    {
+      "id": "9",
+      "name": "AmpUrban Dunk Low Retro Premium",
+      "brand": "AmpKicks",
+      "price": 6995,
+      "category": "Casual",
+      "gender": "Men",
+      "rating": 4.7,
+      "image": "images/MenShoes/Product9.png",
+      "images": [
+        "images/MenShoes/Product9-tn1.png",
+        "images/MenShoes/Product9-tn2.png",
+        "images/MenShoes/Product9-tn3.png",
+        "images/MenShoes/Product9-tn4.png",
+        "images/MenShoes/Product9-tn5.png",
+        "images/MenShoes/Product9-tn6.png"
+      ],
+      "description": "Sleek all-black urban sneakers combining street style with everyday comfort.",
+      "sizes": ["7", "8", "9", "10", "11", "12"]
+    },
+    {
+      "id": "10",
+      "name": "AmpJog Vomero Plus",
+      "brand": "AmpKicks",
+      "price": 4799,
+      "category": "Running",
+      "gender": "Women",
+      "rating": 4.6,
+      "image": "images/WomenShoes/Product10.png",
+      "images": [
+        "images/WomenShoes/Product10-tn1.png",
+        "images/WomenShoes/Product10-tn2.png",               
+        "images/WomenShoes/Product10-tn3.png",
+        "images/WomenShoes/Product10-tn4.png",
+        "images/WomenShoes/Product10-tn5.png",
+        "images/WomenShoes/Product10-tn6.png"
+      ],
+      "description": "Stand out in style with vibrant pink comfort and elite support built for long-distance runs.",
+      "sizes": ["5", "6", "7", "8", "9", "10"]
+    },
+    {
+      "id": "11",
+      "name": "AmpElite Vomero 18",
+      "brand": "AmpKicks",
+      "price": 8395,
+      "category": "Training",
+      "gender": "Men",
+      "rating": 4.9,
+      "image": "images/MenShoes/Product11.png",
+      "images": [
+        "images/MenShoes/Product11-tn1.png",
+        "images/MenShoes/Product11-tn2.png",
+        "images/MenShoes/Product11-tn3.png",
+        "images/MenShoes/Product11-tn4.png",
+        "images/MenShoes/Product11-tn5.png",
+        "images/MenShoes/Product11-tn6.png"
+      ],
+      "description": "Professional-grade training shoes designed for athletes who demand peak performance.",
+      "sizes": ["8", "9", "10", "11", "12", "13"]
+    },
+    {
+      "id": "12",
+      "name": "AmpClassic Red",
+      "brand": "AmpKicks",
+      "price": 5499,
+      "category": "Casual",
+      "gender": "Unisex",
+      "rating": 4.8,
+      "image": "images/Unisex/Product12.png",
+      "images": [
+        "images/Unisex/Product12-tn1.png",
+        "images/Unisex/Product12-tn2.png",
+        "images/Unisex/Product12-tn3.png",
+        "images/Unisex/Product12-tn4.png",
+        "images/Unisex/Product12-tn5.png",
+        "images/Unisex/Product12-tn6.png"
+      ],
+      "description": "Bold red and blue design that makes a statement. Versatile style for any casual occasion.",
+      "sizes": ["6", "7", "8", "9", "10", "11", "12"]
+    },
+    {
+      "id": "13",
+      "name": "AmpWalk Air Max Phenomena",
+      "brand": "AmpKicks",
+      "price": 8595,
+      "category": "Casual",
+      "gender": "Women",
+      "rating": 4.7,
+      "image": "images/WomenShoes/Product13.png",
+      "images": [
+        "images/WomenShoes/Product13-tn1.png",
+        "images/WomenShoes/Product13-tn2.png",
+        "images/WomenShoes/Product13-tn3.png",
+        "images/WomenShoes/Product13-tn4.png",
+        "images/WomenShoes/Product13-tn5.png",
+        "images/WomenShoes/Product13-tn6.png"
+      ],
+      "description": "Walk with power and comfort in every step, featuring air-max cushioning and bold maroon style.",
+      "sizes": ["5", "6", "7", "8", "9", "10"]
+    },
+    {
+      "id": "14",
+      "name": "AmpCourt GP Challenge Pro",
+      "brand": "AmpKicks",
+      "price": 6799,
+      "category": "Tennis",
+      "gender": "Unisex",
+      "rating": 4.9,
+      "image": "images/Unisex/Product14.png",
+      "images": [
+        "images/Unisex/Product14-tn1.png",
+        "images/Unisex/Product14-tn2.png",
+        "images/Unisex/Product14-tn3.png",
+        "images/Unisex/Product14-tn4.png",
+        "images/Unisex/Product14-tn5.png",
+        "images/Unisex/Product14-tn6.png"
+      ],
+      "description": "Specialized tennis shoes with lateral support and court-optimized traction.",
+      "sizes": ["7", "8", "9", "10", "11", "12"]
+    },
+    {
+      "id": "15",
+      "name": "AmpSprint Air Max TL 2.5",
+      "brand": "AmpKicks",
+      "price": 9000,
+      "category": "Running",
+      "gender": "Men",
+      "rating": 4.9,
+      "image": "images/MenShoes/Product15.png",
+      "images": [
+        "images/MenShoes/Product15-tn1.png",
+        "images/MenShoes/Product15-tn2.png",
+        "images/MenShoes/Product15-tn3.png",
+        "images/MenShoes/Product15-tn4.png",
+        "images/MenShoes/Product15-tn5.png",
+        "images/MenShoes/Product15-tn6.png"
+      ],
+      "description": "Competition-ready sprint shoes engineered for maximum speed and acceleration.",
+      "sizes": ["8", "9", "10", "11", "12"]
+    },
+    {
+      "id": "16",
+      "name": "AmpFit Motiva Purple",
+      "brand": "AmpKicks",
+      "price": 3098,
+      "category": "Training",
+      "gender": "Women",
+      "rating": 4.7,
+      "image": "images/WomenShoes/Product16.png",
+      "images": [
+        "images/WomenShoes/Product16-tn1.png",
+        "images/WomenShoes/Product16-tn2.png",
+        "images/WomenShoes/Product16-tn3.png",
+        "images/WomenShoes/Product16-tn4.png",
+        "images/WomenShoes/Product16-tn5.png",
+        "images/WomenShoes/Product16-tn6.png"
+      ],
+      "description": "Stylish purple training shoes with breathable mesh and adaptive fit technology.",
+      "sizes": ["5", "6", "7", "8", "9", "10"]
+    },
+    {
+      "id": "17",
+      "name": "AmpStreet High OG 'Pro Green'",
+      "brand": "AmpKicks",
+      "price": 9000,
+      "category": "Casual",
+      "gender": "Unisex",
+      "rating": 4.8,
+      "image": "images/Unisex/Product17.png",
+      "images": [
+        "images/Unisex/Product17-tn1.png  ",
+        "images/Unisex/Product17-tn2.png",
+        "images/Unisex/Product17-tn3.png",
+        "images/Unisex/Product17-tn4.png",
+        "images/Unisex/Product17-tn5.png",
+        "images/Unisex/Product17-tn6.png"
+      ],
+      "description": "Urban high-top sneakers blending retro aesthetics with contemporary comfort.",
+      "sizes": ["7", "8", "9", "10", "11", "12"]
+    },
+    {
+      "id": "18",
+      "name": "AmpRun Zegama 2",
+      "brand": "AmpKicks",
+      "price": 7916,
+      "category": "Running",
+      "gender": "Women",
+      "rating": 4.7,
+      "image": "images/WomenShoes/Product18.png",
+      "images": [
+        "images/WomenShoes/Product18-tn1.png",
+        "images/WomenShoes/Product18-tn2.png",
+        "images/WomenShoes/Product18-tn3.png",
+        "images/WomenShoes/Product18-tn4.png",
+        "images/WomenShoes/Product18-tn5.png",
+        "images/WomenShoes/Product18-tn6.png"
+      ],
+      "description": "Fresh mint color with cloud-like cushioning for smooth, effortless running.",
+      "sizes": ["5", "6", "7", "8", "9", "10"]
+    },
+    {
+      "id": "19",
+      "name": "AmpGrip Shox Ride 2 Premium",
+      "brand": "AmpKicks",
+      "price": 9000,
+      "category": "Hiking",
+      "gender": "Men",
+      "rating": 4.9,
+      "image": "images/MenShoes/Product19.png",
+      "images": [
+        "images/MenShoes/Product19-tn1.png",
+        "images/MenShoes/Product19-tn2.png",
+        "images/MenShoes/Product19-tn3.png",
+        "images/MenShoes/Product19-tn4.png",
+        "images/MenShoes/Product19-tn5.png",
+        "images/MenShoes/Product19-tn6.png"
+      ],
+      "description": "Heavy-duty outdoor shoes with waterproof construction and aggressive tread pattern.",
+      "sizes": ["8", "9", "10", "11", "12", "13"]
+    },
+    {
+      "id": "20",
+      "name": "AmpVibe Metcon 10",
+      "brand": "AmpKicks",
+      "price": 5999,
+      "category": "Training",
+      "gender": "Unisex",
+      "rating": 4.7,
+      "image": "images/Unisex/Product20.png",
+      "images": [
+        "images/Unisex/Product20-tn1.png",
+        "images/Unisex/Product20-tn2.png",
+        "images/Unisex/Product20-tn3.png",
+        "images/Unisex/Product20-tn4.png",
+        "images/Unisex/Product20-tn5.png",
+        "images/Unisex/Product20-tn6.png"
+      ],
+      "description": "Eye-catching neon orange training shoes for high-energy workouts and visibility.",
+      "sizes": ["6", "7", "8", "9", "10", "11", "12"]
+    },
+    {
+      "id": "21",
+      "name": "AmpGlow SB Dunk Low Pro",
+      "brand": "AmpKicks",
+      "price": 4299,
+      "category": "Casual",
+      "gender": "Unisex",
+      "rating": 4.8,
+      "image": "images/Unisex/Product21.png",
+      "images": [
+        "images/Unisex/Product21-tn1.png",
+        "images/Unisex/Product21-tn2.png",
+        "images/Unisex/Product21-tn3.png",
+        "images/Unisex/Product21-tn4.png",
+        "images/Unisex/Product21-tn5.png",
+        "images/Unisex/Product21-tn6.png"
+      ],
+      "description": "Step up your style with a clean white design, bold color accents, and memory foam comfort built for all-day wear.",
+      "sizes": ["6", "7", "8", "9", "10", "11", "12"]
+    },
+    {
+      "id": "22",
+      "name": "AmpRace Marathon",
+      "brand": "AmpKicks",
+      "price": 8999,
+      "category": "Running",
+      "gender": "Unisex",
+      "rating": 4.9,
+      "image": "images/Unisex/Product22.png",
+      "images": [
+        "images/Unisex/Product22-tn1.png",
+        "images/Unisex/Product22-tn2.png",
+        "images/Unisex/Product22-tn3.png",
+        "images/Unisex/Product22-tn4.png",
+        "images/Unisex/Product22-tn5.png",
+        "images/Unisex/Product22-tn6.png"
+      ],
+      "description": "Premium marathon shoes with carbon fiber plate for record-breaking performances.",
+      "sizes": ["7", "8", "9", "10", "11", "12"]
+    },
+    {
+      "id": "23",
+      "name": "AmpComfort Court Shot",
+      "brand": "AmpKicks",
+      "price": 4095,
+      "category": "Casual",
+      "gender": "Unisex",
+      "rating": 4.8,
+      "image": "images/Unisex/Product23.png",
+      "images": [
+        "images/Unisex/Product23-tn1.png",
+        "images/Unisex/Product23-tn2.png",
+        "images/Unisex/Product23-tn3.png",
+        "images/Unisex/Product23-tn4.png",
+        "images/Unisex/Product23-tn5.png",
+        "images/Unisex/Product23-tn6.png"
+      ],
+      "description": "Crafted with a premium leather upper in classic black and white, the AmpComfort Court Shot delivers a clean, minimalist look.",
+      "sizes": ["6", "7", "8", "9", "10", "11", "12"]
+    },
+    {
+      "id": "24",
+      "name": "AmpBalance Free Metcon 6 SE",
+      "brand": "AmpKicks",
+      "price": 7595,
+      "category": "Training",
+      "gender": "Women",
+      "rating": 4.7,
+      "image": "images/WomenShoes/Product24.png",
+      "images": [
+        "images/WomenShoes/Product24-tn1.png",
+        "images/WomenShoes/Product24-tn2.png",
+        "images/WomenShoes/Product24-tn3.png",
+        "images/WomenShoes/Product24-tn4.png",
+        "images/WomenShoes/Product24-tn5.png",
+        "images/WomenShoes/Product24-tn6.png"
+      ],
+      "description": "Black and pink training shoes designed for stability and balance during workouts.",
+      "sizes": ["5", "6", "7", "8", "9", "10"]
+    }
+  ]
+}

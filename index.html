@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmpKicks - Step Into Power</title>
+    <meta name="description" content="Experience ultimate performance with AmpKicks. Premium athletic footwear designed for champions. Step Into Power. Step Into AmpKicks.">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top" data-testid="navbar-main">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand fw-bold fs-3" href="index.html" data-testid="link-logo">AmpKicks</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" data-testid="button-navbar-toggle">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html" data-testid="link-home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html" data-testid="link-products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html?gender=Men" data-testid="link-men">Men</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html?gender=Women" data-testid="link-women">Women</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-danger" href="products.html?category=Sale" data-testid="link-sale">Sale</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact" data-testid="link-contact">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <a href="#" class="text-dark" data-testid="button-user">
+                        <i class="bi bi-person fs-4"></i>
+                    </a>
+                    <a href="cart.html" class="text-dark position-relative" data-testid="link-cart">
+                        <i class="bi bi-bag fs-4"></i>
+                        <span class="cart-count position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" data-testid="text-cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" data-testid="section-hero">
+        <div class="hero-content">
+            <h1 class="hero-title" data-testid="text-hero-title">Step Into Power.<br>Step Into AmpKicks.</h1>
+            <p class="hero-subtitle" data-testid="text-hero-subtitle">Experience performance innovation like never before</p>
+            <div class="hero-buttons">
+                <a href="products.html" class="btn btn-dark btn-lg px-5 py-3" data-testid="button-shop-now">Shop Now</a>
+                <a href="products.html?category=Running" class="btn btn-outline-dark btn-lg px-5 py-3 ms-3" data-testid="button-buy-now">Buy Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="py-5" data-testid="section-categories">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold" data-testid="text-categories-title">Shop by Category</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <a href="products.html" class="category-card" data-testid="card-new-arrivals">
+                        <div class="category-image" style="background-image: url('https://i.pinimg.com/1200x/4f/a3/0a/4fa30aa16c17c33b6c3b47fed8bc76f5.jpg');"> <!--ilisan ang image dinhi-->
+                            <div class="category-overlay">
+                                <h3 class="category-title">New Arrivals</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <a href="products.html?gender=Men" class="category-card" data-testid="card-mens-collection">
+                        <div class="category-image" style="background-image: url('https://i.pinimg.com/1200x/87/b0/e0/87b0e095676df460bb45c2fe18d29bab.jpg');"> <!--ilisan ang image dinhi-->
+                            <div class="category-overlay">
+                                <h3 class="category-title">Men's Collection</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <a href="products.html?gender=Women" class="category-card" data-testid="card-womens-collection">
+                        <div class="category-image" style="background-image: url('https://i.pinimg.com/736x/ab/65/89/ab6589a7134788a619de0b1da4cab28d.jpg');"> <!--ilisan ang image dinhi-->
+                            <div class="category-overlay">
+                                <h3 class="category-title">Women's Collection</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <a href="products.html?category=Sale" class="category-card" data-testid="card-sale">
+                        <div class="category-image" style="background-image: url('https://i.pinimg.com/736x/53/fb/16/53fb16895d5d11281b3cff8514f33074.jpg');"> <!--ilisan ang image dinhi-->
+                            <div class="category-overlay">
+                                <h3 class="category-title text-danger">Sale & Discounts</h3>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="py-5 bg-light" data-testid="section-featured-products">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold" data-testid="text-featured-title">Featured Products</h2>
+            <div class="row g-4" id="featuredProducts" data-testid="container-featured-products">
+                <!-- Products will be loaded dynamically -->
+            </div>
+            <div class="text-center mt-5">
+                <a href="products.html" class="btn btn-dark btn-lg px-5" data-testid="button-view-all">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Story -->
+    <section class="brand-story" data-testid="section-brand-story">
+        <div class="brand-story-content">
+            <h2 class="brand-story-title" data-testid="text-brand-title">Innovation Meets Performance</h2>
+            <p class="brand-story-text" data-testid="text-brand-description">
+                At AmpKicks, we don't just make shoes. We craft experiences. Every step, every stride, every movement is powered by our commitment to excellence and cutting-edge technology. Join the revolution.
+            </p>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section class="py-5" data-testid="section-technology">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold" data-testid="text-technology-title">Innovative Technology</h2>
+            <div class="row g-5 align-items-center">
+                <div class="col-md-7">
+                    <img src="images/Cushion.png" alt="AmpFoam Technology" class="img-fluid rounded" data-testid="img-ampfoam"> <!--ilisan ang image dinhi-->
+                </div>
+                <div class="col-md-5">
+                    <h3 class="mb-3 fw-bold" data-testid="text-ampfoam-title">AmpFoam Cushion</h3>
+                    <p class="text-muted" data-testid="text-ampfoam-description">Revolutionary foam technology that adapts to your stride, providing unmatched comfort and energy return. Experience the difference in every step.</p>
+                </div>
+            </div>
+            <div class="row g-5 align-items-center mt-4">
+                <div class="col-md-5 order-md-2">
+                    <img src="images/maxairr.png" alt="AirMax Flex Grip" class="img-fluid rounded" data-testid="img-airmax"> <!--ilisan ang image dinhi-->
+                </div>
+                <div class="col-md-6 order-md-1">
+                    <h3 class="mb-5 fw-bold" data-testid="text-airmax-title">AirMax Flex Grip</h3>
+                    <p class="text-muted" data-testid="text-airmax-description">Advanced grip pattern engineered for superior traction on any surface. Whether you're on the court, trail, or track, stay in complete control.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seasonal Promotion -->
+    <section class="py-5 bg-dark text-white" data-testid="section-promotion">
+        <div class="container text-center">
+            <h2 class="display-4 fw-bold mb-3" data-testid="text-promotion-title">Amp Your Style This Season</h2>
+            <p class="lead mb-4" data-testid="text-promotion-subtitle">New collections dropping now. Limited edition styles available.</p>
+            <a href="products.html" class="btn btn-danger btn-lg px-5 py-3" data-testid="button-shop-collection">Shop Collection</a>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-5" data-testid="section-newsletter">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <h2 class="mb-3 fw-bold" data-testid="text-newsletter-title">Stay in the Loop</h2>
+                    <p class="text-muted mb-4" data-testid="text-newsletter-description">Be the first to know about new releases, exclusive offers, and more.</p>
+                    <form class="newsletter-form" data-testid="form-newsletter">
+                        <div class="input-group input-group-lg">
+                            <input type="email" class="form-control" placeholder="Enter your email" required data-testid="input-email">
+                            <button class="btn btn-dark px-5" type="submit" data-testid="button-subscribe">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5" id="contact" data-testid="footer-main">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <h4 class="fw-bold mb-3" data-testid="text-footer-brand">AmpKicks</h4>
+                    <p class="text-muted" data-testid="text-footer-tagline">Step Into Power</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="mb-3" data-testid="text-footer-shop-title">Shop</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="products.html" class="text-muted text-decoration-none" data-testid="link-footer-products">All Products</a></li>
+                        <li><a href="products.html?gender=Men" class="text-muted text-decoration-none" data-testid="link-footer-men">Men</a></li>
+                        <li><a href="products.html?gender=Women" class="text-muted text-decoration-none" data-testid="link-footer-women">Women</a></li>
+                        <li><a href="products.html?category=Sale" class="text-muted text-decoration-none" data-testid="link-footer-sale">Sale</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="mb-3" data-testid="text-footer-support-title">Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-muted text-decoration-none" data-testid="link-footer-help">Help Center</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none" data-testid="link-footer-shipping">Shipping Info</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none" data-testid="link-footer-returns">Returns</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none" data-testid="link-footer-contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="mb-3" data-testid="text-footer-connect-title">Connect</h5>
+                    <div class="social-icons">
+                        <a href="#" class="text-white fs-4 me-3" data-testid="link-footer-facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white fs-4 me-3" data-testid="link-footer-instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white fs-4 me-3" data-testid="link-footer-twitter"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white fs-4" data-testid="link-footer-youtube"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 bg-secondary">
+            <div class="text-center text-muted">
+                <p data-testid="text-footer-copyright">&copy; 2025 AmpKicks. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/index.js"></script>
+</body>
+</html>

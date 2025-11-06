@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - AmpKicks</title>
+    <meta name="description" content="Complete your purchase securely at AmpKicks.">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/checkout.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top" data-testid="navbar-main">
+        <div class="container-fluid px-4">
+            <a class="navbar-brand fw-bold fs-3" href="index.html" data-testid="link-logo">AmpKicks</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" data-testid="button-navbar-toggle">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" data-testid="link-home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html" data-testid="link-products">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html?gender=Men" data-testid="link-men">Men</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html?gender=Women" data-testid="link-women">Women</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-danger" href="products.html?category=Sale" data-testid="link-sale">Sale</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contact" data-testid="link-contact">Contact</a>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center gap-3">
+                    <a href="#" class="text-dark" data-testid="button-user">
+                        <i class="bi bi-person fs-4"></i>
+                    </a>
+                    <a href="cart.html" class="text-dark position-relative" data-testid="link-cart">
+                        <i class="bi bi-bag fs-4"></i>
+                        <span class="cart-count position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" data-testid="text-cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Checkout Content -->
+    <div class="container my-5">
+        <h1 class="fw-bold mb-5" data-testid="text-checkout-title">Checkout</h1>
+
+        <div class="row g-5">
+            <!-- Checkout Form -->
+            <div class="col-lg-7">
+                <form id="checkoutForm" data-testid="form-checkout">
+                    <!-- Contact Information -->
+                    <div class="checkout-section mb-5">
+                        <h4 class="fw-bold mb-4" data-testid="text-contact-title">Contact Information</h4>
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label" data-testid="label-fullname">Full Name *</label>
+                            <input type="text" class="form-control" id="fullName" required data-testid="input-fullname">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label" data-testid="label-email">Email Address *</label>
+                            <input type="email" class="form-control" id="email" required data-testid="input-email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label" data-testid="label-phone">Contact Number *</label>
+                            <input type="tel" class="form-control" id="phone" required data-testid="input-phone">
+                        </div>
+                    </div>
+
+                    <!-- Shipping Address -->
+                    <div class="checkout-section mb-5">
+                        <h4 class="fw-bold mb-4" data-testid="text-shipping-title">Shipping Address</h4>
+                        <div class="mb-3">
+                            <label for="address" class="form-label" data-testid="label-address">Street Address *</label>
+                            <input type="text" class="form-control" id="address" required data-testid="input-address">
+                        </div>
+                        <div class="row g-3 mb-3">
+                            <div class="col-md-6">
+                                <label for="city" class="form-label" data-testid="label-city">City *</label>
+                                <input type="text" class="form-control" id="city" required data-testid="input-city">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="province" class="form-label" data-testid="label-province">Province *</label>
+                                <input type="text" class="form-control" id="province" required data-testid="input-province">
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="zipCode" class="form-label" data-testid="label-zipcode">Postal/Zip Code *</label>
+                            <input type="text" class="form-control" id="zipCode" required data-testid="input-zipcode">
+                        </div>
+                    </div>
+
+                    <!-- Payment Method -->
+                    <div class="checkout-section mb-5">
+                        <h4 class="fw-bold mb-4" data-testid="text-payment-title">Payment Method</h4>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="radio" name="paymentMethod" id="creditCard" value="Credit Card" checked data-testid="radio-credit-card">
+                            <label class="form-check-label" for="creditCard">
+                                <i class="bi bi-credit-card me-2"></i>Credit Card
+                            </label>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="radio" name="paymentMethod" id="gcash" value="GCash" data-testid="radio-gcash">
+                            <label class="form-check-label" for="gcash">
+                                <i class="bi bi-phone me-2"></i>GCash
+                            </label>
+                        </div>
+                        <div class="form-check mb-3">
+                            <input class="form-check-input" type="radio" name="paymentMethod" id="cod" value="Cash on Delivery" data-testid="radio-cod">
+                            <label class="form-check-label" for="cod">
+                                <i class="bi bi-cash me-2"></i>Cash on Delivery
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Place Order Button -->
+                    <button type="submit" class="btn btn-dark btn-lg w-100" data-testid="button-place-order">
+                        <i class="bi bi-lock me-2"></i>Place Order
+                    </button>
+                </form>
+            </div>
+
+            <!-- Order Summary -->
+            <div class="col-lg-5">
+                <div class="order-summary-sticky" data-testid="container-order-summary">
+                    <h4 class="fw-bold mb-4" data-testid="text-order-summary-title">Order Summary</h4>
+                    
+                    <!-- Order Items -->
+                    <div id="orderItems" class="mb-4" data-testid="container-order-items">
+                        <!-- Items will be loaded dynamically -->
+                    </div>
+
+                    <hr>
+
+                    <!-- Pricing -->
+                    <div class="d-flex justify-content-between mb-2">
+                        <span data-testid="text-subtotal-label">Subtotal</span>
+                        <span id="orderSubtotal" data-testid="text-order-subtotal">₱0</span>
+                    </div>
+                    
+                    <div class="d-flex justify-content-between mb-2">
+                        <span data-testid="text-shipping-label">Shipping</span>
+                        <span class="text-success" data-testid="text-shipping">Free</span>
+                    </div>
+
+                    <hr>
+
+                    <div class="d-flex justify-content-between mb-4">
+                        <h5 class="fw-bold" data-testid="text-total-label">Total</h5>
+                        <h5 class="fw-bold" id="orderTotal" data-testid="text-order-total">₱0</h5>
+                    </div>
+
+                    <div class="alert alert-info" data-testid="alert-secure-checkout">
+                        <i class="bi bi-shield-check me-2"></i>
+                        Secure Checkout - Your information is protected
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="modal fade" id="successModal" tabindex="-1" data-testid="modal-success">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center py-5">
+                    <i class="bi bi-check-circle text-success" style="font-size: 4rem;"></i>
+                    <h3 class="mt-4 mb-3" data-testid="text-success-title">Order Placed Successfully!</h3>
+                    <p class="text-muted mb-4" data-testid="text-success-message">Thank you for your purchase. We'll send you a confirmation email shortly.</p>
+                    <a href="products.html" class="btn btn-dark btn-lg px-5" data-testid="button-continue-shopping-success">Continue Shopping</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5" data-testid="footer-main">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <h4 class="fw-bold mb-3" data-testid="text-footer-brand">AmpKicks</h4>
+                    <p class="text-muted" data-testid="text-footer-tagline">Step Into Power</p>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="mb-3" data-testid="text-footer-shop-title">Shop</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="products.html" class="text-muted text-decoration-none" data-testid="link-footer-products">All Products</a></li>
+                        <li><a href="products.html?gender=Men" class="text-muted text-decoration-none" data-testid="link-footer-men">Men</a></li>
+                        <li><a href="products.html?gender=Women" class="text-muted text-decoration-none" data-testid="link-footer-women">Women</a></li>
+                        <li><a href="products.html?category=Sale" class="text-muted text-decoration-none" data-testid="link-footer-sale">Sale</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="mb-3" data-testid="text-footer-support-title">Support</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-muted text-decoration-none" data-testid="link-footer-help">Help Center</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none" data-testid="link-footer-shipping">Shipping Info</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none" data-testid="link-footer-returns">Returns</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none" data-testid="link-footer-contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5 class="mb-3" data-testid="text-footer-connect-title">Connect</h5>
+                    <div class="social-icons">
+                        <a href="#" class="text-white fs-4 me-3" data-testid="link-footer-facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-white fs-4 me-3" data-testid="link-footer-instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-white fs-4 me-3" data-testid="link-footer-twitter"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-white fs-4" data-testid="link-footer-youtube"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 bg-secondary">
+            <div class="text-center text-muted">
+                <p data-testid="text-footer-copyright">&copy; 2025 AmpKicks. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/checkout.js"></script>
+</body>
+</html>
