@@ -43,4 +43,4 @@ This is a **front-end only project**. It focuses on layout, design, and user int
 
 ## Authors
 
-Developed by our group in Webtec.
+Developed by our group in Webtec for academic purposes.
