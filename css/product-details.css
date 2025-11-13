@@ -51,6 +51,10 @@ footer, footer a, footer p, footer h5, footer h4 {
 
 .navbar .nav-link.active {
     color: #02a5e0 !important;
+} 
+
+#productPrice {
+    color: white !important;
 }
 
 /* Global text color for the rest of the page (excluding navbar) */
